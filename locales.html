@@ -56,7 +56,12 @@
                     </div>
                 </article>
                 <article class="tabla_med">
-                    <table class="table table-striped tabla">
+                  <div class="input-icons">
+                    <i class="fas fa-search icon"></i>
+                  <input type="text" id="myInput" onkeyup="myFunction(5)" placeholder="Busca por nombre.." title="Type in a name" >
+                </div>
+                <div class="fixed">
+                    <table class="table table-striped tabla" id="myTable5">
                         <thead>
                           <tr class="table_row">
                             <th scope="col">#</th>
@@ -76,7 +81,21 @@
                           </tr>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Paracetamol</td>
+                            <td>Ibuprofeno</td>
+                            <td>S/4.50</td>
+                            <td>MiFarma</td>
+                            <td>45</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Clorasol</td>
+                            <td>S/4.50</td>
+                            <td>MiFarma</td>
+                            <td>45</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Diasepam</td>
                             <td>S/4.50</td>
                             <td>MiFarma</td>
                             <td>45</td>
@@ -90,34 +109,21 @@
                           </tr>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Paracetamol</td>
+                            <td>Celenio</td>
                             <td>S/4.50</td>
                             <td>MiFarma</td>
                             <td>45</td>
                           </tr>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Paracetamol</td>
-                            <td>S/4.50</td>
-                            <td>MiFarma</td>
-                            <td>45</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Paracetamol</td>
-                            <td>S/4.50</td>
-                            <td>MiFarma</td>
-                            <td>45</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Paracetamol</td>
+                            <td>Morfina</td>
                             <td>S/4.50</td>
                             <td>MiFarma</td>
                             <td>45</td>
                           </tr>
                         </tbody>
                       </table>
+                    </div>
                 </article>
             </div>
             <div class="locales">
@@ -307,8 +313,25 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+      function myFunction(x) {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable"+x);
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+      </script>
 </body>
 </html>
