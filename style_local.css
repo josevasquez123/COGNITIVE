@@ -99,6 +99,9 @@ a{
             .intro p{
                 margin-top: 10px;
             }
+            .intro h3{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
 
             .parrafo{
                 font-family: 'Roboto Slab', serif;
@@ -108,7 +111,7 @@ a{
             }
 
             .margen{
-                margin: -10px 10px 0px 10px;
+                margin: -25px 10px 0px 10px;
                 padding: 10px;
                 box-sizing: border-box;
 
@@ -156,116 +159,52 @@ a{
                     }
         
                         .info{
+                            
                             font-size: 15px;
                             letter-spacing: 1px;
                             color: #222831;
                         }
         
                             .info p{
+                                
                                 margin: 0;
                                 margin-bottom: -10px;
                                 margin: 10px;
                                 padding: 10px;
                             }
-        
-                    .boton{
-                        background: #f7f7f7;
-                        flex: 1 1 auto;
-                        height: 200px;
-                        text-align: center;
-                        
-                    }
-        
-                    .boton2{
-                        color: #494949 !important;
-                        text-decoration: none;
-                        background: #f7f7f7;
-                        padding: 10px;
-                        border: 2px solid #f6b93b;
-                        display: inline-block;
-                        transition: all 0.4s ease 0s;
-                        cursor: pointer;
-                        margin-top: 60%;
-                    }
+                
+                .tabla_med{
+                    display: block;
+                    height: 230px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    padding-right: 60px;
+                    margin-right: 10px;
+                    border-radius: 5%;
+                }
 
-                    .boton2:hover{
-                        color: #ffffff !important;
-                        background: #f6b93b;
-                        border-color: #f6b93b !important;
-                        transition: all 0.4s ease 0s;
-                    }
+                .tabla_med::-webkit-scrollbar{
+                    width: 7px;
+                }
 
-                    .modal {
-                        position: fixed;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%) scale(0);
-                        transition: 200ms ease-in-out;
-                        border: 1px solid black;
-                        border-radius: 10px;
-                        z-index: 10;
-                        background-color: white;
-                        width: 500px;
-                        max-width: 80%;
-                      }
-                      
-                      .modal.active {
-                        transform: translate(-50%, -50%) scale(1);
-                      }
-                      
-                      .modal-header {
-                        padding: 10px 15px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        border-bottom: 1px solid #0e9aa7;
-                      }
-                      
-                      .modal-header .title {
-                        font-size: 1.25rem;
-                        font-weight: bold;
-                        color: #0e9aa7;
-                      }
-                      
-                      .modal-header .close-button {
-                        cursor: pointer;
-                        border: none;
-                        outline: none;
-                        background: none;
-                        font-size: 1.25rem;
-                        font-weight: bold;
-                        color:#0e9aa7;
-                      }
-                      
-                      .modal-body {
-                        padding: 10px 15px;
-                        font-family: Arial, Helvetica, sans-serif;
-                      }
+                
 
-                      .modal-body li{
-                          padding: 5px;
-                          margin-left: 5px;
-                          color:#0e9aa7;
-                      }
-                      
-                      #overlay {
-                        position: fixed;
-                        opacity: 0;
-                        transition: 200ms ease-in-out;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: rgba(0, 0, 0, .5);
-                        pointer-events: none;
-                      }
-                      
-                      #overlay.active {
-                        opacity: 1;
-                        pointer-events: all;
-                      }
+                .tabla td{
+                    text-align: center;
+                }
 
-                      .logo_medic{
-                          margin-right: 5px;
-                      }
+                .table_row th{
+                    position: -webkit-sticky; 
+                    position: sticky;
+                    top: 0;
+                    z-index: 5;
+                    background: #2bb2bb;
+                    color: #fff;  
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 15px;
+                    padding: 10px;                  
+                }
+    
+
+                    
 
