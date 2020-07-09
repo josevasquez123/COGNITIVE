@@ -205,8 +205,8 @@ a{
                     padding: 10px;                  
                 }
 
-                #myInput {
-                
+                .buscador {
+                    
                     background-position: 10px 10px;
                     background-repeat: no-repeat;
                     width: 75%;
