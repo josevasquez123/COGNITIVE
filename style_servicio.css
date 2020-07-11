@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.margen-interno{
+    padding: 0 150px;
+}
+
+.margen-cabecera{
+    padding: 0 150px;
+}
+
+.header{
+        
+    background: url(imagenes/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:contain;
+    background-origin: content-box;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: rgba(0,0,0,.1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        font-family: 'Montserrat', sans-serif;
+    }
+        .logo{
+          
+            flex: 1 1 auto;
+        }
+            .logo a{
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .logo a:hover{
+                color: #343434;
+            }
+
+        .nav{
+      
+            flex: 5 1 auto;
+        }
+            .nav a{
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 0 15px;
+                letter-spacing: 2px;
+            }
+
+            .nav a:hover{
+                color: #343434;
+            }
+
+        .social{
+      
+            flex: 1 1 auto;
+            display: flex;
+
+        }
+            .social a{
+                font-size: 18px;
+                color: #fff;
+                padding: 0 10px;
+            }
+
+            .social a:hover{
+                color: #343434;
+            }
+
+.seccion{
+}
+
+    .intro{
+        padding: 40px 0 0 0;
+    }
+
+        .intro h2{
+            color: #2bb2bb;
+        }
+
+        .intro p{
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+    
+    .contenido2{
+        display: flex;
+        flex-flow: column nowrap;
+    }     
+        .servicios_supaf{
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 1 1 auto;
+            margin-bottom: 50px;
+        }
+
+            .imagenes{
+                flex: 1 1 auto;
+                width: 250px;
+                height: 300px;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                
+            }
+
+                .imagenes img{
+                    width: 150px;
+                    display: block;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    height: 150px;
+                }
+
+                .imagenes p{
+                    margin-top: -50px;
+                    margin-bottom: 50px;
+                    font-size: 18px;
+                    color: #2bb2bb;
+                }
+
+        .contenido{
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 1 1 auto;
+            align-items: center;
+        }
+
+            .informacion{
+                width: 100%;
+                flex: 1 1 auto;
+            }
+
+                    .informacion h2{
+                        color: #2bb2bb;
+                        padding-bottom: 30px;
+                    }
+
+                        .input-icons i { 
+                        position: absolute; 
+                        } 
+                    
+                        .input-icons { 
+                        width: 100%; 
+                        padding-bottom: 30px; 
+                        } 
+                    
+                        .icon { 
+                        padding: 10px; 
+                        min-width: 40px; 
+                        margin-top: 2px;
+                        } 
+
+                        .input-icons input{
+                        border: 1px solid #2bb2bb;
+                        border-radius: 5%;
+                        }
+
+                        .buscador {
+                            
+                            background-position: 10px 10px;
+                            background-repeat: no-repeat;
+                            width: 45%;
+                            height: 40px;
+                            font-size: 16px;
+                            padding: 12px 20px 12px 40px;
+                            border: 1px solid #ddd;
+                            margin-bottom: 12px;
+                        }
+
+                        .info_super p{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+
+            .mapa{
+                width: 100%;
+                flex: 1 1 auto;
+                background: url(imagenes/mapa_prueba.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment:contain;
+                background-origin: content-box;
+                background-size: cover;
+                height: 400px;
+            }
+
