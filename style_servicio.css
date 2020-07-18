@@ -65,6 +65,7 @@
       
             flex: 1 1 auto;
             display: flex;
+            
 
         }
             .social a{
@@ -77,8 +78,6 @@
                 color: #343434;
             }
 
-.seccion{
-}
 
     .intro{
         padding: 40px 0 0 0;
@@ -101,7 +100,8 @@
             display: flex;
             flex-flow: row nowrap;
             flex: 1 1 auto;
-            margin-bottom: 50px;
+            margin-top: 25px;
+            margin-bottom: 75px;
         }
 
             .imagenes{
@@ -139,6 +139,7 @@
             .informacion{
                 width: 100%;
                 flex: 1 1 auto;
+                
             }
 
                     .informacion h2{
@@ -192,6 +193,6 @@
                 background-attachment:contain;
                 background-origin: content-box;
                 background-size: cover;
-                height: 400px;
+                height: 350px;
             }
 
